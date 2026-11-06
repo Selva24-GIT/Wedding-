@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta property="og:title" content="Anusuya ❤️ Dilip">
-<meta property="og:description" content="Wedding Invitation | 11 November 2026 | Karaikkudi">
+<meta property="og:description" content="Wedding Invitation | 11 November 2026 | K. Rayavaram">
 <meta property="og:image" content="https://selva24-git.github.io/Wedding-/preview.jpeg">
 <meta property="og:url" content="https://selva24-git.github.io/Wedding-/">
 <meta property="og:type" content="website">
@@ -547,7 +547,7 @@ document.querySelectorAll('[data-cal]').forEach(a => a.addEventListener('click',
     return;
   }
   const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//KR Wedding//EN', 'BEGIN:VEVENT', 'UID:' + a.dataset.cal + '-kr-2026@invite', 'DTSTAMP:20261001T000000Z',
-    'DTSTART:' + ev.start, 'DTEND:' + ev.end, 'SUMMARY:' + ev.title, 'DESCRIPTION:' + ev.desc, 'LOCATION:Anugraha Mahal\\, Karaikkudi',
+    'DTSTART:' + ev.start, 'DTEND:' + ev.end, 'SUMMARY:' + ev.title, 'DESCRIPTION:' + ev.desc, 'LOCATION:K. Rayavaram',
     'BEGIN:VALARM', 'TRIGGER:-P1D', 'ACTION:DISPLAY', 'DESCRIPTION:Reminder', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
   const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
   const l = document.createElement('a'); l.href = url; l.download = a.dataset.cal + '.ics'; document.body.appendChild(l); l.click(); l.remove();
